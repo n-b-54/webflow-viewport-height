@@ -1,4 +1,4 @@
-
+<script>
   const convertStyle = () => {
     const height = window.innerHeight;
     
@@ -17,3 +17,4 @@
   window.addEventListener("resize", convertStyle);
   window.addEventListener("DOMContentLoaded", convertStyle);
 
+</script>
