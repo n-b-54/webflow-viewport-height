@@ -1,0 +1,19 @@
+
+  const convertStyle = () => {
+    const height = window.innerHeight;
+    
+   Array.from(document.getElementsByTagName("body")).forEach((element) => {
+      element.style.height = `${height}px`;
+    });
+    
+    Array.from(document.querySelectorAll(".scroll-wrapper")).forEach((element) => {
+      element.style.height = `${height}px`;
+    });
+    
+     Array.from(document.querySelectorAll(".section")).forEach((element) => {
+      element.style.maxHeight = `${height}px`;
+    });
+  };
+  window.addEventListener("resize", convertStyle);
+  window.addEventListener("DOMContentLoaded", convertStyle);
+
